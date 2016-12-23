@@ -39,7 +39,7 @@ def repr_fraction(f):
 def main():
     height = parse_input(raw_input("Frame height:\n\t"))
     hang_pt = parse_input(raw_input("Distance from top to mount point:\n\t"))
-    print "Install hook at %s" % (CENTER + (height / 2) - hang_pt)
+    print "Install hook at %s" % repr_fraction(CENTER + (height / 2) - hang_pt)
 
 if __name__ == '__main__':
     main()
